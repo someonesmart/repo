@@ -1,0 +1,640 @@
+/*
+ * Start Bootstrap - Full Slider (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+
+ /* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+	
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* my code */
+header{
+	width: 100%;
+	height: 140px;
+	/*background-color: #000000;*/
+}
+
+header img{
+	margin-top: 10px;
+	margin-left: 10px;
+	float: left;
+}
+
+/* #test {
+	width: 10px;
+	height: 10px;
+	background-image: url(../images/download.png);
+}*/
+
+.wrapper{
+	width: 960px;
+	margin: 0 auto; 
+	/*background-color: #00ff00;*/
+}
+
+/*.video-box-wrapper:hover{
+	Cursor: text !important;
+	text-decoration: none !important; 
+}*/
+
+.wrapper a:hover {
+	/*color: white;*/
+	
+}
+
+.button-no-hover:disabled{
+	text-decoration: none !important; 
+	opacity: 1.0;
+	box-shadow: none;
+}
+
+@font-face{
+	font-family: custom;
+	src: url('southafrican.ttf');
+}
+
+.classname{
+	font-family: custom;
+	font-size: 10pt;
+}
+
+a {
+	color: #000000; 
+	text-decoration: none;
+}
+
+header nav{
+	float: right;
+	margin: 30px;
+}
+
+header nav ul {
+	margin-top: 20px;
+}
+
+header nav ul li {
+	display: inline-block;
+	margin-left: 20px;
+}
+
+header nav ul li a {
+	font-family: custom;
+	font-weight: 300;
+	font-size: 14pt; 
+	color: blue;
+}
+
+a:hover {
+    background-color: #00ff00;
+	/*text-transform: uppercase;*/
+}
+
+.video-box {
+	width: 100%;
+	height: 540px;
+	background-color: #222;
+}
+
+/*.video-box video:hover {
+	text-transform: none;
+}*/
+
+
+.index-intro {
+	width: 100%;
+	background-color: #ffffff;
+	padding: 80px 0px;
+}
+
+.index-intro h2 {
+	font-weight: 700;
+	/*background-color: #ff0000;*/
+	font-family: custom;
+	font-size: 24px;
+	text-align: center;
+	padding-bottom: 10px;
+	/*text-transform: uppercase;*/
+	padding: 20px;
+}
+
+.index-intro p {
+	font-weight: 400;
+	/*background-color: #ff0000;*/
+	font-family: custom;
+	font-size: 16px;
+	text-align: center;
+	line-height: 22px;
+	padding: 10px 40px;
+}
+
+.index-news{
+	width: 100%;
+	background-color: #ccc;
+	padding: 80px 0px;
+	overflow: hidden;
+}
+
+.index-news article{
+	width: 18%;
+	/*background-color: red;*/
+	float: left; 
+	margin: 0px 1%;
+}
+
+.index-news article:hover .news-img1{
+	background-image: url('../images/newshover.jpg')
+}
+
+.index-news article:hover .news-img2{
+	background-image: url('../images/newshover.jpg')
+}
+
+.index-news article:hover .news-img3{
+	background-image: url('../images/newshover.jpg')
+}
+
+.index-news article:hover .news-img4{
+	background-image: url('../images/newshover.jpg')
+}
+
+.index-news article:hover .news-img5{
+	background-image: url('../images/newshover.jpg')
+}
+
+.news-img:hover {
+	color: #ff0000;
+	/*background-image: url('');*/
+	
+}
+
+.news-img1 {
+	width: 100%;
+	height: 120px;
+	/*background-color: #000;*/
+	background-image: url('../images/1.jpg');
+	/*transition: all 1s ease-in-out 2s;
+	-webkit-transition: all 1s ease-in-out 2s;*/
+}
+
+.news-img2 {
+	width: 100%;
+	height: 120px;
+	/*background-color: #000;*/
+	background-image: url('../images/2.jpg');
+	/*transition: all 1s ease-in-out 2s;
+	-webkit-transition: all 1s ease-in-out 2s;*/
+}
+
+.news-img3 {
+	width: 100%;
+	height: 120px;
+	/*background-color: #000;*/
+	background-image: url('../images/3.jpg');
+	/*transition: all 1s ease-in-out 2s;
+	-webkit-transition: all 1s ease-in-out 2s;*/
+}
+
+.news-img4 {
+	width: 100%;
+	height: 120px;
+	/*background-color: #000;*/
+	background-image: url('../images/4.jpg');
+	/*transition: all 1s ease-in-out 2s;
+	-webkit-transition: all 1s ease-in-out 2s;*/
+}
+
+.news-img5 {
+	width: 100%;
+	height: 120px;
+	/*background-color: #000;*/
+	background-image: url('../images/5.jpg');
+	/*transition: all 1s ease-in-out 2s;
+	-webkit-transition: all 1s ease-in-out 2s;*/
+}
+
+
+.index-news h3 {
+	font-weight: 400;
+	/*background-color: #ff0000;*/
+	font-family: custom;
+	font-size: 18px;
+	text-align: center;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	text-transform: uppercase;
+	color: #000;
+}
+
+.index-news p {
+	font-weight: 400;
+	/*background-color: #ff0000;*/
+	font-family: custom;
+	font-size: 14px;
+	text-align: center;
+	padding-bottom: 10px;
+	/*padding-top: 10px;
+	text-transform: uppercase;*/
+	color: #000;
+}
+
+.table-box{
+	width: 100%;
+	padding: 80px 0px;
+	background-color: #fff;
+}
+
+.table-box table tr{
+	border-top: 2px solid #fff;
+}
+
+.table-box table{
+	width: 100%;
+}
+
+.table-box table th{
+	text-align: left;
+}
+
+.table-box table td{
+	background-color: #ccc;
+	border: 2px solid #000;
+}
+
+.form-box{
+	width: 100%;
+	padding: 80px 0px;
+	background-color: #fff;
+}
+
+.form-box form input{
+	/*clear: both;*/
+	width: 20%;
+	height: 30px;
+	margin-bottom: 4px;
+	padding: 0px 0.5%;
+	border: 1px solid #ccc;
+}
+
+.form-radio {
+	clear: both;
+	width: 1% !important;
+	height: 10px;
+	margin-bottom: 4px;
+	padding: 0px 0.5%;
+	border: 1px solid #ccc;
+	/*float: left;*/
+	
+}
+
+.form-box form p{
+	/*clear: both;*/
+	font-size: 16px;
+	color: #282828;
+	font-family: custom;
+	float: left;
+	padding-top: 10px;
+}
+
+.form-box form textarea{
+	/*clear: both;*/
+	width: 20%;
+	height: 100px;
+	margin-bottom: 4px;
+	padding: 6px 0.5%;
+	border: 1px solid #ccc;
+	font-size: 16px;
+	color: #282828;
+	font-family: custom;
+	resize: none;
+}
+
+.form-box button{
+	width: 80px;
+	height: 30px;
+	background-color: orange;
+	border: none;
+	font-size: 16px;
+	color: #fff;
+	font-family: custom;
+}
+
+.form-box button:hover{
+	background-color: #00ff00;
+	text-transform: uppercase;
+}
+
+footer{
+	width: 100%;
+	background-color: #ff00ff;
+	/*padding: 60px 0px;*/
+	padding: 60px;
+}
+
+footer nav{
+	float: left;
+	margin: 30px;
+	margin-left: 150px;
+}
+
+footer nav ul {
+	margin-top: -30px;
+}
+
+footer nav ul li {
+	display: inline-block;
+	margin-left: 20px;
+	list-style: none;
+}
+
+footer nav ul li a {
+	font-family: custom;
+	font-weight: 300;
+	font-size: 14pt; 
+	color: #ffffff;
+}
+.wrapper-footer nav{
+	margin-right: 250px;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);	
+
+html {
+  border-top: 5px solid #fff;
+  /*background: #58DDAF;*/
+  color: #2a2a2a;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans';
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+  font-weight: 300;
+}
+
+#slider {
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto 0 auto;
+  border-radius: 4px;
+}
+
+#slider ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 200px;
+  list-style: none;
+}
+
+#slider ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 500px;
+  height: 300px;
+  background: #ccc;
+  text-align: center;
+  line-height: 300px;
+}
+
+a.control_prev, a.control_next {
+  position: absolute;
+  top: 40%;
+  z-index: 999;
+  display: block;
+  padding: 4% 3%;
+  width: auto;
+  height: auto;
+  background: #2a2a2a;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+a.control_prev:hover, a.control_next:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+}
+
+a.control_prev {
+  border-radius: 0 2px 2px 0;
+}
+
+a.control_next {
+  right: 0;
+  border-radius: 2px 0 0 2px;
+}
+
+.slider_option {
+  position: relative;
+  margin: 10px auto;
+  width: 160px;
+  font-size: 18px;
+}
+
+.slider8{
+	width: 750px;
+	height: 540px;
+}
+
+.slider8 slide{
+	width: 750px;
+	height: 540px;
+}
+
+.carousel{
+    background: #000;
+    margin-top: 20px;
+	width: 100%;
+	height: 560px;
+}
+.carousel .item img{
+    margin: 0 auto; /*- Align slide image horizontally center */
+}
+
+.bs-example{
+	margin: 20px;
+}
+
+.bs-example:hover{
+}
+
+.carousel-slide{
+	
+}
+ 
+html,
+body {
+    height: 100%;
+}
+
+.carousel,
+.item,
+.active {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+/* Background images are set within the HTML using inline CSS, not here */
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+footer {
+    margin: 0;
+}
+
+#map{
+	width: 400px;
+	height: 325px;
+	background: yellow;
+	display: block;
+	float: right;
+	margin-top: -340px;
+}
+
+.title{
+	text-align: center;
+	font-family: custom;
+	text-decoration: bold;
+	color:red;
+}
+
+.title h1{
+	text-align: center;
+	font-family: custom;
+	text-decoration: bold;
+}
+.drop-down{
+	display:none;
+	position:absolute;
+}
+.show{
+	display:block;
+}
+.drop-down span{
+	display:block;
+	padding:5px 0;
+}	
